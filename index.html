@@ -13,6 +13,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
     rel="stylesheet">
+  <!-- font awesome kit link -->
+  <script src="https://kit.fontawesome.com/2798bceebb.js" crossorigin="anonymous"></script>
   <!-- custom tailwind classes -->
   <script>
     tailwind.config = {
@@ -21,6 +23,7 @@
           colors: {
             primary: '#FF4240',
             dark: '#131318',
+            desc: 'rgba(19, 19, 24, 0.60)',
           }
         }
       }
@@ -108,12 +111,317 @@
   <main>
 
     <!-- Progress section code start -->
-    <section>
-      <div class="progress-title">
-        
+    <section class="container mx-auto text-center py-5 lg:py-24">
+      <div class="progress-title border-y-2 border-dashed border-[#13131821] py-8 ">
+        <h3 class="text-dark font-extrabold text-xl lg:text-4xl">Professional Hockeys Club</h3>
+        <p class="lg:text-base text-sm font-medium text-desc py-3 lg:py-6">Dit amet consectetur. Condimentum dignissim
+          adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
+      </div>
+      <div class="progress-box mt-6 lg:mt-10 lg:flex grid gap-3">
+        <div class="p-box1 p-box p-4">
+          <div class="radial-progress text-primary" style="--value:87; --size:8rem; --thickness: 12px;"
+            role="progressbar"><span class="text-dark font-extrabold text-3xl">87%</span></div>
+          <h5 class="text-xl font-semibold text-dark my-4">Prayer Facility</h5>
+          <p class="text-base text-desc font-normal">Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+        <div class="p-box2 p-box p-3">
+          <div class="radial-progress text-[#49D293]" style="--value:65; --size:8rem; --thickness: 12px;"
+            role="progressbar"><span class="text-dark font-extrabold text-3xl">65%</span></div>
+          <h5 class="text-xl font-semibold text-dark my-4">Experienced Coach</h5>
+          <p class="text-base text-desc font-normal">Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+        <div class="p-box3 p-box p-3">
+          <div class="radial-progress text-[#FFB546]" style="--value:90; --size:8rem; --thickness: 12px;"
+            role="progressbar"><span class="text-dark font-extrabold text-3xl">90%</span></div>
+          <h5 class="text-xl font-semibold text-dark my-4">Senior Player</h5>
+          <p class="text-base text-desc font-normal">Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+        <div class="p-box4 p-box p-3">
+          <div class="radial-progress text-[#4C8DF1]" style="--value:75; --size:8rem; --thickness: 12px;"
+            role="progressbar"><span class="text-dark font-extrabold text-3xl">75%</span></div>
+          <h5 class="text-xl font-semibold text-dark my-4">Training Ground</h5>
+          <p class="text-base text-desc font-normal">Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
       </div>
     </section>
     <!-- Progress section code end -->
+
+    <!-- Program section code start -->
+    <section class="program container mx-auto">
+      <div class="program-title text-center border-y-2 border-dashed border-[#13131821] py-8 ">
+        <h3 class="text-dark font-extrabold text-xl lg:text-4xl">Program Sections</h3>
+        <p class="lg:text-base text-sm font-medium text-desc py-3 lg:py-6 leading-6">Dit amet consectetur. Condimentum
+          dignissim
+          adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
+      </div>
+      <div class="program-card grid grid-cols-1 lg:grid-cols-2 gap-4 py-12">
+        <div class="p-card-1">
+          <div class="card bg-base-100 shadow-xl image-full">
+            <figure><img class="w-full" src="images/2.png" alt="Shoes" />
+            </figure>
+            <div class="card-body justify-end">
+              <h2 class="text-white text-xl lg:text-3xl font-extrabold card-title">Junior Program</h2>
+              <p class="grow-0 lg:text-base text-sm font-medium text-white my-2 lg:my-4 leading-6">Dolor sit amet
+                consectetur. Ut urna diam quis sagittis. Elit elit
+                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.
+              </p>
+              <div class="card-actions">
+                <button
+                  class="px-4 py-2 lg:px-6 lg:py-4 text-white font-bold text-lg lg:text-xl bg-[#FF4240]  hover:bg-white rounded-lg hover:text-primary hover:border-none hover:shadow-md transition duration-500 ease-in-out">Register
+                  Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-card-2">
+          <div class="card bg-base-100 shadow-xl image-full">
+            <figure><img class="w-full" src="images/3.png" alt="Shoes" />
+            </figure>
+            <div class="card-body justify-end">
+              <h2 class="text-white text-xl lg:text-3xl font-extrabold card-title">Teenageer Program</h2>
+              <p class="grow-0 text-sm lg:text-base font-medium text-white my-2 lg:my-4 leading-6">Dolor sit amet
+                consectetur. Ut urna diam quis sagittis. Elit elit
+                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.
+              </p>
+              <div class="card-actions">
+                <button
+                  class="px-4 py-2 lg:px-6 lg:py-4 text-white font-bold text-lg lg:text-xl bg-[#FF4240]  hover:bg-white rounded-lg hover:text-primary hover:border-none hover:shadow-md transition duration-500 ease-in-out">Register
+                  Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-card-3 lg:col-span-2">
+          <div class="card bg-base-100 shadow-xl image-full">
+            <figure><img class="bg-[#13131880] w-full" src="images/4.png" alt="Shoes" class="w-full">
+            </figure>
+            <div class="card-body justify-end">
+              <h2 class="text-white text-xl lg:text-3xl font-extrabold card-title">Professional Program</h2>
+              <p class="grow-0 text-sm lg:text-base font-medium text-white leading-6 my-2 lg:my-4">Dolor sit amet
+                consectetur. Ut urna diam quis sagittis. Elit elit <br> enim sagittis turpis in magna. Id et sed euismod
+                natoque amet nunc <br> morbi nulla. Tortor congue sed et in.</p>
+              <div class="card-actions">
+                <button
+                  class="px-4 py-2 lg:px-6 lg:py-4 text-white font-bold text-lg lg:text-xl bg-[#FF4240]  hover:bg-white rounded-lg hover:text-primary hover:border-none hover:shadow-md transition duration-500 ease-in-out">Register
+                  Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Program section code end -->
+
+    <!-- Products section code start -->
+    <section class="products container mx-auto">
+      <div class="products-title text-center border-y-2 border-dashed border-[#13131821] py-8 ">
+        <h3 class="text-dark font-extrabold text-xl lg:text-4xl">Our New Products</h3>
+        <p class="lg:text-base text-sm font-medium text-desc py-3 lg:py-6 leading-6">Dit amet consectetur. Condimentum
+          dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
+      </div>
+      <div class="products-box grid grid-cols-1 lg:grid-cols-2 gap-6 mt-12">
+        <div class="product-1 flex justify-between items-center border border-[#1313181A] p-6 rounded-2xl">
+          <div class="basis-2/5">
+            <img src="images/5.png" alt="">
+          </div>
+          <div class="basis-3/5">
+            <div class="p-icon">
+              <span class="test-base font-medium"><i
+                  class="fa-solid fa-star text-[#F99808] text-base mr-2"></i>5.0</span>
+              <span class="text-[#13131880] test-base font-medium mx-4"><i
+                  class="fa-regular fa-eye text-[#13131880] text-base mr-2"></i>20</span>
+              <span class="text-[#13131880] test-base font-medium"><i
+                  class="fa-regular fa-heart text-[#13131880] text-base mr-2"></i>200</span>
+            </div>
+            <h3 class="text-dark text-xl font-extrabold mt-3">World Cup Flags Footbal</h3>
+            <p class="text-desc text-base font-medium my-3 leading-6">Dolor sit amet consectetur. Ut urna diam quis
+              sagittis. </p>
+            <span class="text-lg font-extrabold leading-6 text-primary">Price - $22.00</span>
+            <span class="text-[#13131880] test-base font-medium mx-4"><i
+                class="fa-solid fa-cart-shopping text-[#13131880] text-base mr-2"></i>Delivery Fee : Free</span>
+          </div>
+        </div>
+        <div class="product-2 flex justify-between items-center border border-[#1313181A] p-6 rounded-2xl">
+          <div class="basis-2/5">
+            <img src="images/6.png" alt="">
+          </div>
+          <div class="basis-3/5">
+            <div class="p-icon">
+              <span class="test-base font-medium"><i
+                  class="fa-solid fa-star text-[#F99808] text-base mr-2"></i>5.0</span>
+              <span class="text-[#13131880] test-base font-medium mx-4"><i
+                  class="fa-regular fa-eye text-[#13131880] text-base mr-2"></i>20</span>
+              <span class="text-[#13131880] test-base font-medium"><i
+                  class="fa-regular fa-heart text-[#13131880] text-base mr-2"></i>200</span>
+            </div>
+            <h3 class="text-dark text-xl font-extrabold mt-3">World Cup Flags Footbal</h3>
+            <p class="text-desc text-base font-medium my-3 leading-6">Dolor sit amet consectetur. Ut urna diam quis
+              sagittis. </p>
+            <span class="text-lg font-extrabold leading-6 text-primary">Price - $22.00</span>
+            <span class="text-[#13131880] test-base font-medium mx-4"><i
+                class="fa-solid fa-cart-shopping text-[#13131880] text-base mr-2"></i>Delivery Fee : Free</span>
+          </div>
+        </div>
+        <div class="product-3 flex justify-between items-center border border-[#1313181A] p-6 rounded-2xl">
+          <div class="basis-2/5">
+            <img src="images/7.png" alt="">
+          </div>
+          <div class="basis-3/5">
+            <div class="p-icon">
+              <span class="test-base font-medium"><i
+                  class="fa-solid fa-star text-[#F99808] text-base mr-2"></i>5.0</span>
+              <span class="text-[#13131880] test-base font-medium mx-4"><i
+                  class="fa-regular fa-eye text-[#13131880] text-base mr-2"></i>20</span>
+              <span class="text-[#13131880] test-base font-medium"><i
+                  class="fa-regular fa-heart text-[#13131880] text-base mr-2"></i>200</span>
+            </div>
+            <h3 class="text-dark text-xl font-extrabold mt-3">Cap For Hockeys</h3>
+            <p class="text-desc text-base font-medium my-3 leading-6">Dolor sit amet consectetur. Ut urna diam quis
+              sagittis. </p>
+            <span class="text-lg font-extrabold leading-6 text-primary">Price - $22.00</span>
+            <span class="text-[#13131880] test-base font-medium mx-4"><i
+                class="fa-solid fa-cart-shopping text-[#13131880] text-base mr-2"></i>Delivery Fee : Free</span>
+          </div>
+        </div>
+        <div class="product-4 flex justify-between items-center border border-[#1313181A] p-6 rounded-2xl">
+          <div class="basis-2/5">
+            <img src="images/8.png" alt="">
+          </div>
+          <div class="basis-3/5">
+            <div class="p-icon">
+              <span class="test-base font-medium"><i
+                  class="fa-solid fa-star text-[#F99808] text-base mr-2"></i>5.0</span>
+              <span class="text-[#13131880] test-base font-medium mx-4"><i
+                  class="fa-regular fa-eye text-[#13131880] text-base mr-2"></i>20</span>
+              <span class="text-[#13131880] test-base font-medium"><i
+                  class="fa-regular fa-heart text-[#13131880] text-base mr-2"></i>200</span>
+            </div>
+            <h3 class="text-dark text-xl font-extrabold mt-3">World Cup Flags Footbal</h3>
+            <p class="text-desc text-base font-medium my-3 leading-6">Dolor sit amet consectetur. Ut urna diam quis
+              sagittis. </p>
+            <span class="text-lg font-extrabold leading-6 text-primary">Price - $22.00</span>
+            <span class="text-[#13131880] test-base font-medium mx-4"><i
+                class="fa-solid fa-cart-shopping text-[#13131880] text-base mr-2"></i>Delivery Fee : Free</span>
+          </div>
+        </div>
+        <div class="product-5 flex justify-between items-center border border-[#1313181A] p-6 rounded-2xl">
+          <div class="basis-2/5">
+            <img src="images/9.png" alt="">
+          </div>
+          <div class="basis-3/5">
+            <div class="p-icon">
+              <span class="test-base font-medium"><i
+                  class="fa-solid fa-star text-[#F99808] text-base mr-2"></i>5.0</span>
+              <span class="text-[#13131880] test-base font-medium mx-4"><i
+                  class="fa-regular fa-eye text-[#13131880] text-base mr-2"></i>20</span>
+              <span class="text-[#13131880] test-base font-medium"><i
+                  class="fa-regular fa-heart text-[#13131880] text-base mr-2"></i>200</span>
+            </div>
+            <h3 class="text-dark text-xl font-extrabold mt-3">World Cup Flags Footbal</h3>
+            <p class="text-desc text-base font-medium my-3 leading-6">Dolor sit amet consectetur. Ut urna diam quis
+              sagittis. </p>
+            <span class="text-lg font-extrabold leading-6 text-primary">Price - $22.00</span>
+            <span class="text-[#13131880] test-base font-medium mx-4"><i
+                class="fa-solid fa-cart-shopping text-[#13131880] text-base mr-2"></i>Delivery Fee : Free</span>
+          </div>
+        </div>
+        <div class="product-6 flex justify-between items-center border border-[#1313181A] p-6 rounded-2xl">
+          <div class="basis-2/5">
+            <img src="images/10.png" alt="">
+          </div>
+          <div class="basis-3/5">
+            <div class="p-icon">
+              <span class="test-base font-medium"><i
+                  class="fa-solid fa-star text-[#F99808] text-base mr-2"></i>5.0</span>
+              <span class="text-[#13131880] test-base font-medium mx-4"><i
+                  class="fa-regular fa-eye text-[#13131880] text-base mr-2"></i>20</span>
+              <span class="text-[#13131880] test-base font-medium"><i
+                  class="fa-regular fa-heart text-[#13131880] text-base mr-2"></i>200</span>
+            </div>
+            <h3 class="text-dark text-xl font-extrabold mt-3">World Cup Flags Footbal</h3>
+            <p class="text-desc text-base font-medium my-3 leading-6">Dolor sit amet consectetur. Ut urna diam quis
+              sagittis. </p>
+            <span class="text-lg font-extrabold leading-6 text-primary">Price - $22.00</span>
+            <span class="text-[#13131880] test-base font-medium mx-4"><i
+                class="fa-solid fa-cart-shopping text-[#13131880] text-base mr-2"></i>Delivery Fee : Free</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Products section code end -->
+
+    <!-- Client section code start -->
+    <section class="client">
+      <div class="client-title text-center border-y-2 border-dashed border-[#13131821] py-8 ">
+        <h3 class="text-dark font-extrabold text-xl lg:text-4xl">Clients Question</h3>
+        <p class="lg:text-base text-sm font-medium text-desc py-3 lg:py-6 leading-6">Dit amet consectetur. Condimentum
+          dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
+      </div>
+      <div class="client-faq">
+        <div class="hero min-h-screen bg-base-200">
+          <div class="hero-content flex-col lg:flex-row">
+            <img src="images/11.png" class="max-w-sm rounded-lg shadow-2xl" />
+            <div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-xl font-medium">
+                  Click to open this one and close others
+                </div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">
+                  Click to open this one and close others
+                </div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">
+                  Click to open this one and close others
+                </div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-xl font-medium">
+                  Click to open this one and close others
+                </div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">
+                  Click to open this one and close others
+                </div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">
+                  Click to open this one and close others
+                </div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Client section code end -->
 
   </main>
   <!--Main section code end  -->
