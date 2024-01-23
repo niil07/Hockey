@@ -1,26 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hockey's</title>
-    <!-- Tailwind with DaisyUi link -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Manrope fonts link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hockey's</title>
+  <!-- Tailwind with daisyui cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google font manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <!-- custom tailwind classes -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FF4240',
+            dark: '#131318',
+          }
+        }
+      }
+    }
+  </script>
+  <!-- custom css classes -->
+  <style>
+    body {
+      font-family: 'Manrope', sans-serif;
+    }
+
+    .menu li a:hover {
+      color: #FF4240;
+      background-color: none;
+
+    }
+  </style>
 </head>
+
 <body>
-    <header>
 
-    </header>
-    <main>
 
-    </main>
-    <footer>
+  <!--header section code start  -->
+  <header>
+    <nav class="container mx-auto py-5">
+      <div class="navbar">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost hover:bg-transparent lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a class="text-base">Home</a></li>
+              <li><a class="text-base">About</a></li>
+              <li><a class="text-base">Pages</a></li>
+              <li><a class="text-base">Blog</a></li>
+              <li><a class="text-base">Contact</a></li>
+            </ul>
+          </div>
+          <a class="text-2xl lg:text-4xl font-extrabold text-dark">Hockey<span class="text-primary">'</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-base">Home</a></li>
+            <li><a class="text-base">About</a></li>
+            <li><a class="text-base">Pages</a></li>
+            <li><a class="text-base">Blog</a></li>
+            <li><a class="text-base">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <img class="mr-2" src="images/Frame.svg" alt="">
+          <a
+            class="px-4 py-2 lg:px-6 lg:py-4 text-white font-bold text-lg lg:text-xl bg-[#FF4240]  hover:bg-white rounded-lg hover:text-primary hover:border-none hover:shadow-md transition duration-500 ease-in-out">Get
+            Ticket</a>
+        </div>
+      </div>
+    </nav>
+    <div class="banner container mx-auto">
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="images/1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 bottom-0">
+            <a href="#slide4" class="mr-1 text-white hover:bg-[#131318] bg-[#131318] btn-circle btn">❮</a>
+            <a href="#slide2" class="text-white hover:bg-[#131318] bg-[#131318] btn-circle btn">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="images/banner2.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 bottom-0">
+            <a href="#slide1" class="mr-1 text-white hover:bg-[#131318] bg-[#131318] btn-circle btn">❮</a>
+            <a href="#slide3" class="text-white hover:bg-[#131318] bg-[#131318] btn-circle btn">❯</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--header section code end  -->
+
+
+  <!--Main section code start  -->
+  <main>
+
+    <!-- Progress section code start -->
+    <section>
+      <div class="progress-title">
         
-    </footer>
+      </div>
+    </section>
+    <!-- Progress section code end -->
+
+  </main>
+  <!--Main section code end  -->
 </body>
+
 </html>
